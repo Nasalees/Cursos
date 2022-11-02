@@ -1,0 +1,87 @@
+Github = Hospedagem 
+git bash =  ferramenta 
+
+
+git config --global user.name  "nome do usuario" mesma coisa para alterar
+
+git config --global user.email "email@mail.com"
+
+git config --global core.editor "nome da editor"
+
+git init : inicial o repositorio novo nas pasta atual
+
+git clone https:nomedorepositorio.com
+
+git checkout 'develop' para mudar da master para develop
+
+git remote add origin https:link git Para link o repositorio local com repositorio no github           
+
+git remote - v lista em qual repositorio está linkacado
+
+git pull origin 'develop' - atualiza com a develop com outras palavras faz o merge 
+
+git marger develop -  atualiza a develop com feature.
+
+git branch lista as braches locais .
+
+git branch -a lista as braches locais e remotas .
+
+git branch -m nome-atigo nome-novo : renomear o nome da branch ou modicar nome da branch
+
+git branch -d "nomeBranch" deleta a branch
+
+history | grep checkout - verifica a versao atual que está usando
+
+git branch -d nomeDaBranch : deleta branch 
+
+git fetch  - atualizas as novas branchas
+
+git stash save "Nome do Stash" - pega as alterações e salva em um lugar (similar ao commit)
+ l
+git stash list : Lista os stash 
+
+git stash pop 1 : Traz de volta as alteração que fora salvas segue uma lista de array onde o 1 é o index do stash
+
+git stash clear : limpa a lista de stashs
+
+git log : Mostra dos os commits realizados para sair digita Q
+
+git log --oneline : traz o resumo dos commits realizados em uma linha
+
+git log --graph :  Mostra as de forma grafica 
+
+gitk abrir uma ferramente grafica 
+
+git checkout -- . : retorna para o ultimo commit  
+
+git reset 885dasda8 ou HEAD~1 : reverte(retorna) um commit (HEAD~ 1 = referente ao numero de vezes que deve voltar)
+
+git reset --soft se não passar  o HEADS~1 ele retorna para o último: refaz o git commit   
+
+git reset HEAD^ --soft desfaz o ultimo commit  
+
+git reset mixed HEAD~1 : refaz  o git add . testar 
+
+git resert --hard HEAD~1 : retorna para commit anterior e deletar o commit atual
+
+git config --global list : lista configurações
+
+git config --global core.editor "nome do editor" mudar o editor padrão
+
+git config --global --unset core.editor remover a ultima configr 
+
+git revert HEAD~1 :   
+
+:q para sair
+
+git --help
+
+git push -f origin (hash da branch do último commit):develop = reverte o push
+
+criando tag
+git tag  -a v2.0 -m "versão"
+
+git tag -a  v1.0 -m "versão 1.0" hashcode 05154659494964646465456465
+
+deletando
+git tag -d v2.0
